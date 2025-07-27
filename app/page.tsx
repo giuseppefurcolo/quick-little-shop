@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react'
 import { supabase } from '../lib/supabase'
 
 export default function Home() {
-  const [connected, setConnected] = useState(null)
-  const [tableCount, setTableCount] = useState(0)
+  const [connected, setConnected] = useState<boolean | null>(null)
+  const [tableCount, setTableCount] = useState<number>(0)
 
   useEffect(() => {
     const testConnection = async () => {
@@ -18,7 +18,7 @@ export default function Home() {
         
         setConnected(true)
         setTableCount(data?.length || 0)
-      } catch (error) {
+      } catch (error: any) {
         console.log('Database test error:', error.message)
         setConnected(false)
       }
