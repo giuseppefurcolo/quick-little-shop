@@ -18,8 +18,8 @@ export default function Home() {
         
         setConnected(true)
         setTableCount(data?.length || 0)
-      } catch (error: any) {
-        console.log('Database test error:', error.message)
+      } catch (error) {
+        console.log('Database test error:', error instanceof Error ? error.message : 'Unknown error')
         setConnected(false)
       }
     }
