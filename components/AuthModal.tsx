@@ -130,7 +130,7 @@ export default function AuthModal({ isOpen, onClose, mode, onModeChange }: AuthM
 
         <div className="mt-4 text-center">
           <p className="text-sm text-gray-600">
-            {mode === 'login' ? "Don't have an account? " : "Already have an account? "}
+            {mode === 'login' ? 'Don\'t have an account? ' : 'Already have an account? '}
             <button
               onClick={() => onModeChange(mode === 'login' ? 'signup' : 'login')}
               className="text-blue-600 hover:underline"

@@ -69,7 +69,7 @@ export default function Home() {
               <div className="mt-6 p-4 bg-green-50 rounded-lg">
                 <h3 className="font-semibold text-green-800 mb-2">🎉 Authentication Working!</h3>
                 <p className="text-green-700">
-                  You're successfully logged in. Next up: creating your marketplace profile and posting items!
+                  You&apos;re successfully logged in. Next up: creating your marketplace profile and posting items!
                 </p>
               </div>
             </div>
@@ -80,7 +80,7 @@ export default function Home() {
                 Join Quick Little Shop to buy and sell items with your trusted neighbors.
               </p>
               <p className="text-sm text-gray-500">
-                Click "Sign Up" in the navigation to create your account
+                Click &ldquo;Sign Up&rdquo; in the navigation to create your account
               </p>
             </div>
           )}
